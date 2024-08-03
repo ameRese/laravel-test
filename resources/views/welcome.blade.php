@@ -19,9 +19,6 @@
         @can('test')
             テストゲート
         @endcan
-        @for ($i = 0; $i < 10; $i++)
-            {{ $i }}、
-        @endfor
         @auth
             <p>
                 {{ Auth::user()->name }}さん、こんにちは。
