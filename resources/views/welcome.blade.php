@@ -16,6 +16,7 @@
         </style>
     </head>
     <body class="font-sans antialiased dark:bg-black dark:text-white/50">
+        Hello World
         @can('test')
             テストゲート
         @endcan
