@@ -1,6 +1,6 @@
 こんにちは
-@foreach($users as $user)
+{{-- @foreach($users as $user)
     <p>
         {{ $user->name }}
     </p>
-@endforeach
+@endforeach --}}
