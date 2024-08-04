@@ -3,12 +3,15 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\TestController;
 
 Route::resource('post', PostController::class);
 
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/test', [TestController::class, 'test'])->name('test');
 
 // Route::get('/dashboard', function () {
 //     return view('dashboard');
